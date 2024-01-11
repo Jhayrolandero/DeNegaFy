@@ -1,0 +1,14 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Section from "./Section.astro";
+
+type Props = {
+  articles: CollectionEntry<"articles">[];
+};
+
+const { articles } = Astro.props;
+---
+
+<div class="flex flex-col gap-3">
+  {articles.map((article) => <Section article={article} />)}
+</div>

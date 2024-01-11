@@ -1,0 +1,16 @@
+---
+import { type CollectionEntry } from "astro:content";
+import Prose from "./Prose.astro";
+type Props = {
+  article: CollectionEntry<"articles">;
+};
+
+const { article } = Astro.props;
+const { Content } = await article.render();
+---
+
+<section>
+  <Prose>
+    <Content />
+  </Prose>
+</section>
