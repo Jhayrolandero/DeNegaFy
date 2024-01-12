@@ -9,6 +9,4 @@ type Props = {
 const { articles } = Astro.props;
 ---
 
-<div class="flex flex-col gap-3">
-  {articles.map((article) => <Section article={article} />)}
-</div>
+{articles.map((article) => <Section article={article} />)}

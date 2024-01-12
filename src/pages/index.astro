@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Main from "../components/Main.astro";
+import Home from "../components/sections/Home.astro";
 import SectionList from "../components/SectionList.astro";
 import { getCollection } from "astro:content";
 
@@ -9,6 +10,8 @@ const allArticles = await getCollection("articles");
 
 <Layout title="Welcome to Earth">
   <Main>
-    <SectionList articles={allArticles} />
+    <Home>
+      <SectionList articles={allArticles} />
+    </Home>
   </Main>
 </Layout>
