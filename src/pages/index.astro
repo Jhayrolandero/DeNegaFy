@@ -7,13 +7,14 @@ import Home from "../components/sections/Home.astro";
 import { getCollection } from "astro:content";
 
 const allArticles = await getCollection("articles");
+const allIntroductions = await getCollection("introductions");
 ---
 
 <Layout title="Welcome to Earth">
   <Main>
     <Home />
     <About>
-      <SectionList articles={allArticles} />
+      <SectionList articles={allArticles} introductions={allIntroductions} />
     </About>
   </Main>
 </Layout>

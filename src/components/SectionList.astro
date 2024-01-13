@@ -4,9 +4,12 @@ import Section from "./Section.astro";
 
 type Props = {
   articles: CollectionEntry<"articles">[];
+  introductions: CollectionEntry<"introductions">[];
 };
 
-const { articles } = Astro.props;
+const { articles, introductions } = Astro.props;
+
+console.log(introductions);
 ---
 
 {articles.map((article) => <Section article={article} />)}

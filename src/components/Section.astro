@@ -8,7 +8,6 @@ type Props = {
 };
 
 const { article } = Astro.props;
-const { Content } = await article.render();
 ---
 
 <Prose>
@@ -18,6 +17,7 @@ const { Content } = await article.render();
       {article.body}
     </p>
   </div>
+
   <Image
     src={article.data.image}
     width={860}
