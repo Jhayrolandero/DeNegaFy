@@ -12,14 +12,17 @@ const { Content } = await article.render();
 ---
 
 <Prose>
-  <div>
+  <div class="prose">
     <h1>{article.data.title}</h1>
-    <Content />
+    <p class="text-2xl text-blue-500">
+      {article.body}
+    </p>
   </div>
   <Image
     src={article.data.image}
-    width={500}
-    height={600 / 1.5}
+    width={860}
+    height={200}
     alt={article.data.title}
+    class="m-0 aspect-square max-h-96"
   />
 </Prose>

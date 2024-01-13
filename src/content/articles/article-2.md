@@ -1,6 +1,6 @@
 ---
 image: ./images/img-2.png
-title: A World Without Negativity
+title: A World Without Negas
 ---
 
-Eliminating negativity is a transformative process that involves consciously choosing a positive mindset and fostering constructive perspectives. It requires recognizing and challenging negative thoughts, replacing them with affirming beliefs, and cultivating gratitude.
+In a world without negas, harmony and optimism would flourish, creating an environment where kindness, empathy, and cooperation become the guiding principles. People would engage in uplifting conversations, emphasizing solutions and mutual understanding rather than dwelling on conflicts.
