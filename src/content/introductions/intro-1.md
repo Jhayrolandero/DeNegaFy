@@ -1,5 +1,5 @@
 ---
-title: What is DeNeGaFy?
+title: What is DeNegaFy?
 ---
 
-DeNeGaFy(Delete-Negative-Fy) suggest random things to do to minimize negativity
+DeNegaFy(Delete-Negative-Fy) suggest random things to do to cope with negativity
