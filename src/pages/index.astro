@@ -4,10 +4,6 @@ import Main from "../components/Main.astro";
 import About from "../components/sections/About.astro";
 import Intro from "../components/sections/Intro.astro";
 import Home from "../components/sections/Home.astro";
-import { getCollection } from "astro:content";
-
-const allArticles = await getCollection("articles");
-const allIntroductions = await getCollection("introductions");
 ---
 
 <Layout title="Welcome to Earth">

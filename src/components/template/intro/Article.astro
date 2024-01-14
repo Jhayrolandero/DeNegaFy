@@ -1,0 +1,19 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+type Props = {
+  intro: CollectionEntry<"introductions">;
+};
+
+const { intro } = Astro.props;
+const { Content } = await intro.render();
+---
+
+<article class="flex grow max-lg:flex-col max-lg:items-center">
+  <div
+    class="prose prose-xl prose-p:text-zinc-300 prose-headings:text-white prose-ul:text-white prose-h4:text-white prose-p:text-2xl"
+  >
+    <h4 class="text-5xl">{intro.data.title}</h4>
+    <Content />
+  </div>
+</article>
