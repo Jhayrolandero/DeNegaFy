@@ -4,7 +4,7 @@ import Article from "../template/intro/Article.astro";
 const allIntros = await getCollection("introductions");
 ---
 
-<section id="intro" class="flex flex-col gap-20 py-24">
+<section id="faq" class="flex flex-col gap-20 py-24">
   {allIntros.map((intro) => <Article intro={intro} />)}
   <slot />
 </section>
