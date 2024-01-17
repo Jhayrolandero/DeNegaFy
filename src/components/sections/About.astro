@@ -1,10 +1,12 @@
 ---
 import { getCollection, getEntry } from "astro:content";
+
+import H4 from "../template/H4.astro";
 import Article from "../template/about/Article.astro";
 const allArticles = await getCollection("articles");
 ---
 
 <section id="about" class="flex flex-col gap-20 py-24">
-  <h4 class="text-zinc-50 text-5xl pb-20">Why Eliminate Negas?</h4>
+  <H4 title="Why Eliminate Negas?" />
   {allArticles.map((article) => <Article article={article} />)}
 </section>

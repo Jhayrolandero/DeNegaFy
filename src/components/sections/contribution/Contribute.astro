@@ -1,0 +1,18 @@
+---
+import H4 from "../../template/H4.astro";
+import ContributeForm from "./ContributeForm.vue";
+import Article from "../../template/contribution/Article.astro";
+import { getCollection } from "astro:content";
+
+const allContributions = await getCollection("contributions");
+---
+
+<section id="contribution" class="flex flex-col gap-20 py-24 text-white">
+  {
+    allContributions.map((contribution) => (
+      <Article contribute={contribution} />
+    ))
+  }
+  <H4 title="Contribution Form" />
+  <ContributeForm client:visible />
+</section>

@@ -16,7 +16,15 @@ const introductionsCollection = defineCollection({
   })
 });
 
+const contributionsCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string()
+  })
+})
+
 export const collections = {
   'articles': articlesCollection,
-  'introductions': introductionsCollection
+  'introductions': introductionsCollection,
+  'contributions': contributionsCollection
 };

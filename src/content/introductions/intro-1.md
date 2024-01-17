@@ -2,4 +2,4 @@
 title: What is DeNegaFy?
 ---
 
-DeNegaFy(Delete-Negative-Fy) suggest random things to do to cope with negativity
+DeNegaFy(Delete-Negative-Fy) suggest random activity (inspired by Bored API) to do to cope with negativity

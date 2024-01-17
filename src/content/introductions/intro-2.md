@@ -4,10 +4,11 @@ title: How did you build DeNegaFy?
 
 Made possible by using Astro hosted on Netlify
 
-## Frontend
+### Frontend
 
 - Astro with Vue
 
-## Backend
+### Backend
 
 - Express
+- MongoDB
