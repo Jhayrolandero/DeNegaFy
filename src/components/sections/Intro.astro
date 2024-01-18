@@ -1,10 +1,12 @@
 ---
 import { getCollection } from "astro:content";
+
 import Article from "../template/intro/Article.astro";
+import Section from "../template/Section.astro";
+
 const allIntros = await getCollection("introductions");
 ---
 
-<section id="faq" class="flex flex-col gap-20 py-24">
+<Section id="faq">
   {allIntros.map((intro) => <Article intro={intro} />)}
-  <slot />
-</section>
+</Section>
