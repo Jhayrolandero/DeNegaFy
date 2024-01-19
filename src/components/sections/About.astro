@@ -4,6 +4,7 @@ import { getCollection, getEntry } from "astro:content";
 import H4 from "../template/H4.astro";
 import Article from "../template/about/Article.astro";
 import Section from "../template/Section.astro";
+import BackToTop from "../template/BackToTop.vue";
 
 const allArticles = await getCollection("articles");
 ---
@@ -11,4 +12,5 @@ const allArticles = await getCollection("articles");
 <Section id="about">
   <H4 title="Why Eliminate Negas?" />
   {allArticles.map((article) => <Article article={article} />)}
+  <BackToTop client:visible />
 </Section>

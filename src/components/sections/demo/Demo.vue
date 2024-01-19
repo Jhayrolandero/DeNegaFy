@@ -1,8 +1,8 @@
 <template lang="">
-    <div>
-        <input type="text" :value="activity" class="text-white bg-black border-2 border-white px-3 py-2">
-        <button @click="getActivity" class="text-white border-2 border-white px-3 py-2">DeNegaFy</button>
+    <div class="border-2 border-white text-white rounded-lg px-32 py-44 text-2xl">
+        {{ activity }}
     </div>
+    <button @click="getActivity" class="text-white border-2 border-white px-3 py-2">DeNegaFy</button>
 </template>
 <script setup>
 import axios from 'axios'

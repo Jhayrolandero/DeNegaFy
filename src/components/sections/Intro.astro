@@ -3,10 +3,12 @@ import { getCollection } from "astro:content";
 
 import Article from "../template/intro/Article.astro";
 import Section from "../template/Section.astro";
+import BackToTop from "../template/BackToTop.vue";
 
 const allIntros = await getCollection("introductions");
 ---
 
 <Section id="faq">
   {allIntros.map((intro) => <Article intro={intro} />)}
+  <BackToTop client:visible />
 </Section>
